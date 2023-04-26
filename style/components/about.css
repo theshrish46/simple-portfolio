@@ -1,0 +1,41 @@
+.about {
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--size-4xl);
+}
+
+h4 {
+    margin: 1rem auto;
+    font-size: var(--size-2xl);
+}
+
+.about__para {
+    font-size: var(--size-xl);
+    margin: 0.95rem auto;
+}
+
+.about__list__name {
+    font-size: var(--size-2xl);
+    margin: 0.9rem auto;
+}
+
+ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    gap: 1em 1.5em;
+    list-style: ;
+}
+
+li::before {
+    content: '\00BB';
+    padding: 0rem 0.5rem;
+    color: var(--clr-rose);
+}
+
+li {
+    list-style: none;
+    font-size: var(--size-xl);
+}

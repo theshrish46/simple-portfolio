@@ -12,7 +12,7 @@ h2 {
     font-size: var(--size-3xl);
 }
 
-p {
+.intro__para {
     font-size: var(--size-lg);
     text-align: center;
     margin: 0.75rem auto;
