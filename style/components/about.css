@@ -26,16 +26,21 @@ ol {
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     gap: 1em 1.5em;
-    list-style: ;
+    list-style: none;
 }
 
-li::before {
+.about__li__items::before {
     content: '\00BB';
     padding: 0rem 0.5rem;
     color: var(--clr-rose);
 }
 
-li {
+.about__li__items {
     list-style: none;
     font-size: var(--size-xl);
+    transition: color 75ms ease-in-out 0.2s;
+}
+.about__li__items:hover {
+    font-size: var(--size-xl);
+    color: var(--clr-rose);
 }
