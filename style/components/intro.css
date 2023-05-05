@@ -3,8 +3,8 @@
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 h2 {
@@ -41,6 +41,9 @@ h2 {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .intro {
+    text-align: justify;
   }
   h2 {
     font-size: var(--size-5xl);
