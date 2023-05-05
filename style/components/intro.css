@@ -1,24 +1,79 @@
 @import url(./../style.css);
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
-    margin: 0.75rem auto;
-    font-size: var(--size-3xl);
+  margin: 0.75rem auto;
+  font-size: var(--size-3xl);
 }
 
 .intro__para {
-    font-size: var(--size-lg);
-    text-align: center;
-    margin: 0.75rem auto;
+  font-size: var(--size-lg);
+  text-align: center;
+  margin: 0.75rem auto;
 }
 
 .btn {
-    margin: 1rem auto;
-    font-size: var(--size-lg);
+  margin: 1rem auto;
+  font-size: var(--size-lg);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  h2 {
+    font-size: var(--size-5xl);
+  }
+  .intro__para {
+    font-size: var(--size-2xl)
+  }
+  .btn {
+    margin: 2rem auto;
+    font-size: var(--size-3xl);    
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .section {
+    margin-top: 10rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
